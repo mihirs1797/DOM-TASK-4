@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+<div class="card mx-auto my-5" style="width: 40%;">
+    <div class="card-body">
+        <h5 class="card-title text-center">Form</h5>
+        <h6 class="card-subtitle mb-2 text-muted text-center">Food Form</h6>
+        <br>
+        <form action="">
+            <div class="form-group">
+                <label for="">Enter First Name</label>
+                <input type="text" class="form-control" name="" id="" placeholder="John" autofocus>
+                <br>
+                <label for="">Enter Last Name</label>
+                <input type="text" class="form-control" name="" id="" placeholder="Smith">
+                <br>
+                <label for="">Address Line 1</label>
+                <input type="text" class="form-control" name="" id="" placeholder="999, City, India">
+                <br>
+                <label for="">Address Line 2</label>
+                <input type="text" class="form-control" name="" id="" placeholder="999, City, India">
+                <br>
+                <label for="">State</label>
+                <input type="text" class="form-control" name="" id="" placeholder="999, City, India">
+                <br>          
+                <label for="">Country</label>
+                <input type="text" class="form-control" name="" id="" placeholder="Country Name">
+                <br>                     
+                <label for="">Pincode</label>
+                <input type="text" pattern="[0-9]{6}" class="form-control" name="" id="" placeholder="000000" maxlength="6">
+                <br>
+                <div class="form-group">
+                  <label for="">Gender</label>
+                  <select class="form-control" name="" id="">
+                    <option>-------</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <label for="">Food Choice (select two)</label>
+                <div class="form-check mb-2 mr-sm-2">
+                  <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                  <label class="form-check-label" for="inlineFormCheck">
+                    Dosa
+                  </label>
+                </div>
+                <div class="form-check mb-2 mr-sm-2">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                      Idli
+                    </label>
+                  </div>
+                  <div class="form-check mb-2 mr-sm-2">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                      Samosa
+                    </label>
+                  </div>
+                  <div class="form-check mb-2 mr-sm-2">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                      Paratha
+                    </label>
+                  </div>
+                  <div class="form-check mb-2 mr-sm-2">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                      Dosa
+                    </label>
+                  </div>
+            </div>
+            <button type="submit" class="btn btn-primary float-right">Submit</button>  
+        </form>        
+    </div>
+</div>
+</body>
+</html>
