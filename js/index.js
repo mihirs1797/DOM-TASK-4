@@ -2,11 +2,10 @@ var form = document.getElementById("form");
 
 form.addEventListener('submit',function(e){
     //e.preventDefault(); 
-    addToStorage();
+    addToStorage(e);
 })
 
-function addToStorage(){
-    // document.getElementById("serial").innerText = i;
+function addToStorage(e){
     var fname = document.getElementById("firstName").value;
     localStorage.setItem("fname",fname);
     var lname = document.getElementById("lastName").value;
@@ -32,10 +31,12 @@ function addToStorage(){
     const fieldset = document.querySelector('.foodchoices');
     const checkboxes = fieldset.querySelectorAll('input[type=checkbox]:checked');
     if(checkboxes.length <2){
-        alert("Select two food choices!")
+        alert("Select two food choices!");
+        e.preventDefault();
     }
     if(checkboxes.length>2){
         alert("Select only two food choices!");
+        e.preventDefault();
     }
     var fc1 = checkboxes[0].value;
     localStorage.setItem("fc1",fc1);
