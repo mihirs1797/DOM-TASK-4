@@ -1,3 +1,11 @@
-body{
-    background: linear-gradient(90deg, rgba(153,237,135,1) 15%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 85%);
+@media (min-width:992px){
+    .card{
+        width: 40%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .card{
+        width: 50%
+    }
 }
